@@ -6,11 +6,6 @@ $(function () {
             : $('.header').removeClass('on')
     });
 
-    $('.header .gnb>ul>li').on('click', function (e) {
-        e.preventDefault();
-        $(this).addClass('on').siblings().removeClass('on')
-    })
-
     const scheduleSlide = new Swiper('.schedule_slide', {
         loop: true,
         slidesPerView: 1,
@@ -19,7 +14,7 @@ $(function () {
         // },
         breakpoints: {
             768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 10,
             }
         }
@@ -32,18 +27,7 @@ $(function () {
         scheduleSlide.slideNext();
     });
 
-    const mainSlide = new Swiper('.main_slide', {
-        loop: true,
-        slidesPerView: 3,
-        spaceBetween: 10,
-        // autoplay: {
-        //     delay: 2000,
-        // },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+
 
 });
 
