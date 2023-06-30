@@ -7,7 +7,7 @@ $(function () {
     });
 
     const scheduleSlide = new Swiper('.schedule_slide', {
-        slidesPerView: 3,
+        slidesPerView: 4,
         initialSlide: 3,
         spaceBetween: 10,
     });
@@ -25,6 +25,12 @@ $(function () {
 
 });
 
+
+const conSlide = new Swiper('.con_slide', {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+});
 
 
 
