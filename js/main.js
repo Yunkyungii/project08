@@ -27,7 +27,9 @@ $(function () {
         scheduleSlide.slideNext();
     });
 
-
+    $('.main_schedule .arrows>*').on('click', function () {
+        $(this).addClass('on').siblings().removeClass('on');
+    })
 
 });
 
@@ -43,10 +45,13 @@ $(function () {
         playOnlyIfVisible: true,
     });
 
-    $('.main_visual .pause').on('click', function () {
+    $('.main_visual .ctr .pause').on('click', function () {
         $('#bg_video').YTPPause();
+        $(this).addClass('on').siblings().removeClass('on')
     });
-    $('.main_visual .play').on('click', function () {
+    $('.main_visual .ctr .play').on('click', function () {
         $('#bg_video').YTPPlay();
+        $(this).addClass('on').siblings().removeClass('on')
     });
+
 })

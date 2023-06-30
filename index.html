@@ -22,9 +22,9 @@
     <div class="wrap">
         <header class="header">
             <div class="inner">
-                <h1><a href=""><img src="./images/champ_logo.png" alt=""></a></h1>
+                <h1><a href="/"><img src="./images/champ_logo.png" alt=""></a></h1>
                 <nav class="gnb">
-                    <ul>
+                    <ul class="main_menu">
                         <li><a href="">편성표</a>
                             <ul class="sub">
                                 <li><a href="">일일편성표</a></li>
@@ -53,7 +53,7 @@
                                 <li><a href="">동영상</a></li>
                             </ul>
                         </li>
-                        <li><a href="">이벤트</a>
+                        <li><a href="./doc/sub.html" target="_blank">이벤트</a>
                             <ul class="sub">
                                 <li><a href="">진행중인이벤트</a></li>
                                 <li><a href="">이벤트 게시판</a></li>
@@ -63,12 +63,14 @@
                     </ul>
                 </nav>
                 <div class="search">
-                    <form method="get" action="f">
-                        <input type="text" name="search" placeholder="프로그램 찾기">
-                        <button>
-                            <i class="xi-search"></i>
-                        </button>
-                    </form>
+                    <div class="search_box">
+                        <form method="get" action="f">
+                            <input type="text" name="search" placeholder="프로그램 찾기">
+                            <button>
+                                <i class="xi-search"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </header>
@@ -77,15 +79,17 @@
                 <div class="video_tit">
                     <strong>오소마츠 6쌍둥이 6주년 기념 극장판</strong>
                     <p>오소마츠 6쌍둥이 히피포족과 빛나는 과실 <br />
-                        6월 29일 VOD로 최초 공개!</p>
+                        <span>6월 29일 </span>VOD로 최초 공개!
+                    </p>
                 </div>
                 <div class="main_video">
                     <div id="bg_video" class="player">
                         My video</div>
-                    <div class="ctr">
-                        <i class="xi-pause pause"></i>
-                        <i class="xi-play play"></i>
-                    </div>
+
+                </div>
+                <div class="ctr">
+                    <i class="xi-pause pause"></i>
+                    <i class="xi-play play"></i>
                 </div>
             </section>
             <section class="main_schedule">
@@ -217,15 +221,21 @@
             </section>
         </main>
         <footer class="footer">
+            <h2 class="blind">customer service</h2>
             <div class="top">
                 <div class="inner">
-                    <ul>
+                    <ul class="customer">
                         <li><a href="">이용약관</a></li>
-                        <li><a href=""><strong>개인정보취급방침</strong></a></li>
+                        <li><a href=""><strong>개인정보처리방침</strong></a></li>
                         <li><a href="">회사소개</a></li>
                         <li><a href="">광고안내</a></li>
                         <li><a href="">찾아오시는길</a></li>
                         <li><a href="">사이트맵</a></li>
+                    </ul>
+                    <ul class="link">
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                        <li><a href=""><i class="xi-facebook-official"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -240,7 +250,7 @@
                     <li>email : webmaster@anionetv.com</li>
                 </ul>
                 <div class="copy">
-                    &copy; DAIWON BROADCASTING CO.LTD.,ALL RIGHT RESEVED
+                    &copy; DAIWON BROADCASTING CO.,LTD.ALL RIGHTS RESERVED.
                 </div>
             </div>
 
@@ -257,3 +267,5 @@
 노#F6AB1A
 파#5C70B6
 초#7EC042 -->
+
+<!-- \eb21 -->

@@ -1,0 +1,117 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+h2 {
+    margin: 0 0 30px 0;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    width: 1200px;
+    margin: 0 auto 100px auto;
+    padding: 15px 15px 0 15px;
+    text-align: center;
+    color: #666;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%, 0);
+    background: #666;
+    width: 20px;
+    height: 2px;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 0 15px;
+}
+
+.title strong {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    position: relative;
+}
+
+.title strong::before {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    right: -15px;
+    background: #da001a;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.title strong p {
+    display: 15px;
+    line-height: 21px;
+}
+
+.event {
+    padding: 100px 0;
+    background: #f2f2f2;
+}
+
+.event .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.event .inner figure {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    background: #f9f9f9;
+    padding: 20px 20px;
+    border-radius: 10px;
+    height: 180px;
+    align-items: center;
+}
+
+.event figure .desc strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.event figure .btn {
+    text-align: end;
+    border-left: 1px solid #ddd;
+}
+
+.event figure .btn a {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.event figure a i {
+    transition: 0.5s;
+    border-radius: 30px;
+    background: #444;
+    color: #f9f9f9;
+    padding: 10px;
+    margin: 0 0 0 10px;
+    transition: 0.5s;
+}
+
+
+.event figure a:hover i {
+    background: #da001a;
+}
