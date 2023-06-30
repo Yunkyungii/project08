@@ -7,17 +7,9 @@ $(function () {
     });
 
     const scheduleSlide = new Swiper('.schedule_slide', {
-        loop: true,
-        slidesPerView: 1,
-        // autoplay: {
-        //     delay: 2000,
-        // },
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-            }
-        }
+        slidesPerView: 3,
+        initialSlide: 3,
+        spaceBetween: 10,
     });
 
     $('.main_schedule .arrows .prev').on('click', function () {
